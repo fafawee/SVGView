@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fagawee.svg.MainActivity$PlaceholderFragment" >
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true" >
+
+        <com.fagawee.svg.lib.SvgView
+            android:id="@+id/svg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="#dddddd" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/svgd"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:background="#dddddd"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="#eeeeee"
+        android:gravity="center"
+        android:text="restart" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/restart"
+        android:layout_marginBottom="10dp"
+        android:background="#eeeeee"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp" />
+
+</RelativeLayout>
